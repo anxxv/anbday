@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>С Днём Рождения! 🎀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700&family=Nunito:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&family=Baloo+2:wght@700;800&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+<!-- ===================== ENTRY SCREEN: имя + пол ===================== -->
+<section id="entry-screen" class="entry-screen">
+
+
+    <div class="entry-content">
+      <h1 class="entry-title">
+        <span class="entry-title-small">Welcome to</span>
+        <span class="entry-title-big">An&rsquo;s Birthday</span>
+      </h1>
+
+      <form id="entry-form" class="entry-form" autocomplete="off">
+        <label class="entry-label" for="guest-name">Ваше имя</label>
+        <input type="text" id="guest-name" name="guest-name" placeholder="Введите ваше имя…" required maxlength="40">
+
+        <div class="gender-row" role="radiogroup" aria-label="Пол">
+          <button type="button" class="gender-btn" data-gender="female">Женщина</button>
+          <button type="button" class="gender-btn" data-gender="male">Мужчина</button>
+        </div>
+
+        <button type="submit" class="go-arrow-btn" aria-label="Продолжить" disabled>
+          <img src="assets/arrow.png" alt="">
+        </button>
+      </form>
+    </div>
+</section>
+
+<!-- ===================== ЛЕНДИНГ — скролл вниз ===================== -->
+<!-- ===================== LANDING — scroll down ===================== -->
+<main id="landing" class="landing hidden">
+
+  <!-- HERO -->
+  <section class="chapter hero">
+    <div class="pattern"></div>
+    <div class="hero-content reveal" data-delay="0">
+      <h3>An&rsquo;s</h3>
+      <h1>BIRTHDAY</h1>
+      <span>Birthday</span>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span>&#10022;</span></div>
+
+  <!-- CALENDAR -->
+  <section class="chapter calendar">
+    <div class="chapter-content reveal" data-delay="0">
+      <h2>November</h2>
+
+      <div class="week">
+        <p>M</p><p>T</p><p>W</p><p>T</p><p>F</p><p>S</p><p>S</p>
+      </div>
+
+      <div class="days">
+        <p></p><p></p><p></p><p></p><p></p><p></p><p>1</p>
+
+        <p>2</p>
+        <p class="active">3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+
+        <p>23</p>
+        <p>24</p>
+        <p>25</p>
+        <p>26</p>
+        <p>27</p>
+        <p>28</p>
+        <p>29</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span>&#10022;</span></div>
+
+  <!-- FILM -->
+  <section class="chapter films">
+    <div class="filmstrip filmstrip-1 reveal" data-delay="0">
+      <span class="film-number">4</span>
+      <span class="film-frame"><img src="assets/photo1.png" alt=""></span>
+      <span class="film-frame"><img src="assets/photo2.png" alt=""></span>
+      <span class="film-frame"><img src="assets/photo3.png" alt=""></span>
+      <span class="film-number">3A</span>
+    </div>
+    <div class="filmstrip filmstrip-2 reveal" data-delay="1">
+      <span class="film-number">4</span>
+      <span class="film-frame"><img src="assets/photo4.png" alt=""></span>
+      <span class="film-frame"><img src="assets/photo5.png" alt=""></span>
+      <span class="film-frame"><img src="assets/photo6.png" alt=""></span>
+      <span class="film-number">2A</span>
+    </div>
+  </section> 
+
+  <div class="divider" aria-hidden="true"><span>&#10022;</span></div>
+
+  <!-- TIMING -->
+  <section class="chapter block">
+    <div class="chapter-content reveal" data-delay="0">
+      <h2>B-DAY <br><i>timing</i></h2>
+
+      <div class="timeline">
+        <div>
+          <small>19:00</small>
+          <h3>Guests Gathering</h3>
+        </div>
+        <div>
+          <small>19:20-25</small>
+          <h3>Photoshoot</h3>
+        </div>
+        <div>
+          <small>19:25 - 23:00</small>
+          <h3>Eating | Dancing | Games</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span>&#10022;</span></div>
+
+  <!-- DRESS CODE -->
+  <section class="chapter block dress">
+    <div class="chapter-content reveal" data-delay="0">
+      <h2>Dress <br><i>code</i></h2>
+
+      <p>
+        The main dress code is your smile and a good mood!
+        <br>
+        Come with plenty of energy to dance, laugh and have fun with us!
+      </p>
+
+      <p class="pink">
+        And if you&rsquo;d like to add to the festive atmosphere &mdash;
+        <br>
+        feel free to add something pink or white to your outfit!
+      </p>
+
+      <div class="colors">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <p>
+        Prepare a phrase, quote, or small drawing in advance
+        <br>
+        that you&rsquo;d like to put on this canvas.
+      </p>
+      <p class="pink">There&rsquo;s a spot for every guest!</p>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span>&#10022;</span></div>
+
+  <!-- LOCATION -->
+  <section class="chapter block location">
+    <div class="chapter-content reveal" data-delay="0">
+      <h2>Restaurant <br><i>Location</i></h2>
+
+      <h3>XVACHKARA <br> BALASHIKHA, SOVETSKAYA 26</h3>
+
+      <a class="map-btn" href="https://maps.google.com/?q=Xvachkara+Balashikha+Sovetskaya+26" target="_blank" rel="noopener">OPEN IN MAP</a>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span>&#10022;</span></div>
+
+  <!-- RSVP -->
+  <section class="chapter block rsvp">
+    <div class="chapter-content reveal" data-delay="0">
+      <h2>Are you joining us?</h2>
+      <p class="rsvp-subtext">Let us know if you&rsquo;ll be celebrating with us!</p>
+
+      <p class="guest-counter hidden" id="guest-counter">
+        <span id="guest-counter-num">0</span> уже сказали «да» &#10084;
+      </p>
+
+      <div class="rsvp-box">
+        <form id="rsvp-form">
+          <label class="entry-label" for="rsvp-name">Твоё имя</label>
+          <input type="text" id="rsvp-name" name="rsvp-name" placeholder="Введите ваше имя…" required maxlength="40">
+
+          <p class="entry-label rsvp-question">Ты придёшь?</p>
+          <div class="answers">
+            <label class="answer-option">
+              <input type="radio" name="attending" value="yes" required>
+              <span>YES</span>
+            </label>
+            <label class="answer-option">
+              <input type="radio" name="attending" value="no">
+              <span>NO</span>
+            </label>
+          </div>
+
+          <div class="track-field hidden" id="track-field">
+            <div class="track-field-inner">
+              <label class="entry-label track-label" for="rsvp-track">
+                <span class="track-note">&#9835;</span> Любимый трек
+              </label>
+              <input type="text" id="rsvp-track" name="rsvp-track" placeholder="Какую песню включить для тебя?" maxlength="100">
+            </div>
+          </div>
+
+          <button type="submit" class="rsvp-submit">&hearts; Подтвердить присутствие</button>
+        </form>
+
+        <div id="rsvp-thanks" class="rsvp-thanks hidden">
+          <span class="thanks-heart">&hearts;</span>
+          <p id="rsvp-thanks-text">Спасибо! Твой ответ сохранён.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
